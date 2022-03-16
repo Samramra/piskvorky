@@ -1,31 +1,39 @@
-position: relative;
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
+  height: auto;
   background-color: #000;
   color: #fff;
-  background-attachment: fixed;
 }
 .pozadi {
-  height: 100vh;
+  height: 200vh;
   background: linear-gradient(#615dad, #ffc8da);
   background-size: cover;
-}
-.nadpis {
-  font-family: lobster;
-  font: 48px;
+  background-attachment: fixed;
 }
 img {
-  display: block;
+  width: 660px;
+  height: 500px;
   margin: 110px auto;
+  margin-left: 635px;
 }
-p {
-  display: block;
+h1 {
+  font-family: lobster;
+  font-size: 56px;
   background: #283e50;
   text-align: center;
-  width: 340px;
-  height: 200px;
+}
+p {
+  background: #283e50;
+  text-align: center;
+  font-size: 34px;
+}
+.piskvorky {
+  width: 660px;
+  height: 690px;
+  margin-left: 635px;
+  margin-top: -115px;
 }
