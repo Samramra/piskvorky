@@ -1,0 +1,31 @@
+position: relative;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #000;
+  color: #fff;
+  background-attachment: fixed;
+}
+.pozadi {
+  height: 100vh;
+  background: linear-gradient(#615dad, #ffc8da);
+  background-size: cover;
+}
+.nadpis {
+  font-family: lobster;
+  font: 48px;
+}
+img {
+  display: block;
+  margin: 110px auto;
+}
+p {
+  display: block;
+  background: #283e50;
+  text-align: center;
+  width: 340px;
+  height: 200px;
+}
