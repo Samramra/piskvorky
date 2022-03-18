@@ -38,3 +38,27 @@ h1 {
   margin-left: 635px;
   margin-top: -119px;
 }
+a {
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+}
+.pravidla {
+  position: absolute;
+  background: #1fcca4;
+  width: 640px;
+  height: 40px;
+  margin-top: 0px;
+  padding-top: 10px;
+  border: 1px solid;
+  border-color: #1fcca4 #1fcca4 #000 #1fcca4;
+}
+.zacni {
+  position: absolute;
+  background: #0197f6;
+  width: 640px;
+  height: 40px;
+  margin-top: 22px;
+  padding-top: 10px;
+}
