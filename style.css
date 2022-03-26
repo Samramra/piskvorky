@@ -3,64 +3,65 @@
   padding: 0;
   box-sizing: border-box;
 }
+html, /*musíš dát, aby se ti nerozpadlo pozadí*/
 body {
   height: auto;
+  margin-top: 20px; /*posune dolů*/
   background-color: #000;
-}
-.pozadi {
-  height: 100vh;
   background: linear-gradient(#615dad, #ffc8da);
   background-size: cover;
   background-attachment: fixed;
 }
+.celek {
+  width: 640px;
+  height: 760px;
+  margin: auto;
+  color: #fff;
+  text-align: center;
+}
+
+.celek, /*musím zadávat taky protože je to rodič*/
 img {
-  margin: 110px auto;
-  margin-top: 60px;
-  margin-left: 635px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
+
+.piskvorky {
+  background-color: #283e50;
+  display: block;
+  flex-dicertion: column;
+  margin-top: -4px;
+}
+
 h1 {
-  font-family: lobster;
-  font-size: 48px;
-  color: #fff;
-  background: #283e50;
-  text-align: center;
-  line-height: 2.5;
+  line-height: 1.5;
+  font-family: lobster, sans-serif;
+  font-size: 42px;
 }
+
 .text {
-  color: #fff;
-  background: #283e50;
-  text-align: center;
   font-size: 30px;
 }
-.piskvorky {
-  width: 640px;
-  height: 340px;
-  margin-left: 635px;
-  margin-top: -119px;
-}
+
 a {
   text-align: center;
   text-decoration: none;
   color: #fff;
-  font-size: 22px;
+  font-size: 24px;
 }
-.pravidla {
-  position: absolute;
-  background: #1fcca4;
-  width: 640px;
-  height: 48px;
-  margin-top: 0px;
-  padding-top: 10px;
-  line-height: 1;
+
+.rules {
   border: 1px solid;
   border-color: #1fcca4 #1fcca4 #000 #1fcca4;
+  background-color: #1fcca4;
+  display: block;
+  height: 50px;
+  line-height: 2;
 }
-.zacni {
-  position: absolute;
-  background: #0197f6;
-  width: 640px;
-  height: 48px;
-  margin-top: 30px;
-  padding-top: 10px;
-  line-height: 1;
+
+.start {
+  background-color: #0197f6;
+  display: block;
+  height: 50px;
+  line-height: 2;
 }
