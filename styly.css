@@ -4,9 +4,8 @@
 html {
   height: auto;
   margin-top: 20px;
-  background-color: #000;
+  background-color: #fff;
   background: linear-gradient(#615dad, #ffc8da);
-
   background-attachment: fixed;
 }
 .celek {
@@ -33,6 +32,7 @@ h1 {
   line-height: 1;
   font-family: lobster, sans-serif;
   font-size: 36px;
+  text-align: center;
 }
 
 .text {
@@ -60,4 +60,56 @@ a {
   display: block;
   height: 45px;
   line-height: 2;
+}
+
+.pravidla {
+  background-color: #283e50;
+  display: flex;
+  flex-direction: column;
+  margin-top: -5px;
+  width: 500px;
+  margin: auto;
+  color: #fff;
+}
+.seznam {
+  text-align: left;
+  font-size: 16px;
+}
+li {
+  line-height: 1.5;
+}
+.rules {
+  border: 1px solid;
+  border-color: #1fcca4 #1fcca4 #000 #1fcca4;
+  background-color: #1fcca4;
+  display: block;
+  height: 45px;
+  line-height: 2;
+}
+.svg1 {
+  width: 1em;
+  height: 1em;
+  text-color: #fff;
+  filter: invert(100%);
+}
+.svg2 {
+  width: 1em;
+  height: 1em;
+  color: #fff;
+  filter: invert(100%);
+}
+.situace {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+.instructions {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  width: 360px;
+}
+.popisky {
+  display: block;
+  text-align: center;
+  bottom: 20px;
 }
