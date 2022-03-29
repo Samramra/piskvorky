@@ -89,7 +89,7 @@ li {
 .svg1 {
   width: 1em;
   height: 1em;
-  text-color: #fff;
+  color: #fff;
   filter: invert(100%);
 }
 .svg2 {
