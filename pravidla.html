@@ -8,72 +8,103 @@
     <link rel="stylesheet" href="styly.css" />
   </head>
   <body>
-<div class="pravidla">
-    <h1>Pravidla</h1>
-    <ol class="listOfRules">
-      <li>Hra piškvorky je určena pro dva hráče.</li>
+    <div class="pravidla">
+      <h1>Pravidla</h1>
+      <ol class="listOfRules">
+        <li>Hra piškvorky je určena pro dva hráče.</li>
 
-      <li>Hraje se na hrací ploše 10×10, tvořené poli ve tvaru čtverce.</li>
+        <li>Hraje se na hrací ploše 10×10, tvořené poli ve tvaru čtverce.</li>
 
-      <li>
-        Na začátku si hráči rozdělí role. Jeden bude hrát za kolečka <img src="./img/circle.svg" class="svg" alt="kroužek"/>, druhý bude hrát za křížky <img src="./img/cross.svg" class="svg" alt="křížek"/>.
-      </li>
+        <li>
+          Na začátku si hráči rozdělí role. Jeden bude hrát za kolečka
+          <img src="./img/circle.svg" class="svg" alt="kroužek" />, druhý bude
+          hrát za křížky <img src="./img/cross.svg" class="svg" alt="křížek" />.
+        </li>
 
-      <li>
-        Losem se určí, kdo bude začínat. V naší aplikaci to vylosujeme za vás.
-      </li>
+        <li>
+          Losem se určí, kdo bude začínat. V naší aplikaci to vylosujeme za vás.
+        </li>
 
-      <li>Hráči se střídají v tazích.</li>
+        <li>Hráči se střídají v tazích.</li>
 
-      <li>
-        Hráč, který je na tahu, umístí jeden ze svých symbolů na prázdné pole na
-        hrací ploše. Tj. hráč hrající za křížky umístí křížek, hráč hrající za
-        kolečka umístí kolečko.
-      </li>
+        <li>
+          Hráč, který je na tahu, umístí jeden ze svých symbolů na prázdné pole
+          na hrací ploše. Tj. hráč hrající za křížky umístí křížek, hráč hrající
+          za kolečka umístí kolečko.
+        </li>
 
-      <li>Křížky a kolečka se umisťují dovnitř políček na hrací ploše.</li>
+        <li>Křížky a kolečka se umisťují dovnitř políček na hrací ploše.</li>
 
-      <li>Hráč, který umístí pět svých symbolů do jedné řady, vyhrává.</li>
+        <li>Hráč, který umístí pět svých symbolů do jedné řady, vyhrává.</li>
 
-      <li>
-        Výherní kombinací se rozumí pět symbolů ve směru vodorovném, svislém
-        nebo šikmém. Mezi pěti symboly tvořícími výherní kombinaci nesmí být
-        žádné prázdné pole ani pole obsazené soupeřovým symbolem.
-      </li>
+        <li>
+          Výherní kombinací se rozumí pět symbolů ve směru vodorovném, svislém
+          nebo šikmém. Mezi pěti symboly tvořícími výherní kombinaci nesmí být
+          žádné prázdné pole ani pole obsazené soupeřovým symbolem.
+        </li>
 
-      <li>
-        Pokud hráči zaplní celou desku, aniž by někdo umístil pět svých symbolů
-        do jedné řady, hra končí remízou.
-      </li>
-
+        <li>
+          Pokud hráči zaplní celou desku, aniž by někdo umístil pět svých
+          symbolů do jedné řady, hra končí remízou.
+        </li>
       </ol>
-<div class="instruction">
-<figure>
-      <img class="instrImg" src="./img/instructions-01.jpg" alt="instructions-01"> 
-      <figcaption>Situace po třech tazích - na tahu je hráč s kolečky</figcaption>
-     </figure>     
-     <figure>
-      <img class="instrImg" src="./img/instructions-02.jpg" alt="instructions-02">
-      <figcaption>Situace po čtyřech tazích</figcaption>  
-     </figure>
-     <figure >
-      <img class="instrImg" src="./img/instructions-03.jpg" alt="instructions-03">
-      <figcaption>Výherní pozice hráče s kolečky</figcaption>
-     </figure>
-     <figure>
-      <img class="instrImg" src="./img/instructions-04.jpg" alt="instructions-04">
-      <figcaption>V této situaci nikdo nevyhrává. Pokud je na tahu <br>hráč s kolečky, může přidat další kolečko do <br>šikmé řady, kde už má 4 kolečka, a vyhraje.</figcaption>         
-     </figure>  
-     <figure>
-      <img class="instrImg" src="./img/instructions-05.jpg" alt="instructions-05">
-      <figcaption>Výherní pozice hráče s křížky</figcaption>       
-     </figure>
-     <figure>
-      <img class="instrImg" src="./img/instructions-06.jpg" alt="instructions-06">
-      <figcaption>Ještě jedna výherní pozice hráče s kolečky</figcaption>
-     </figure>
-</div>  
-    <a
+      <div class="instruction">
+        <figure>
+          <img
+            class="instrImg"
+            src="./img/instructions-01.jpg"
+            alt="instructions-01"
+          />
+          <figcaption>
+            Situace po třech tazích - na tahu je hráč s kolečky
+          </figcaption>
+        </figure>
+        <figure>
+          <img
+            class="instrImg"
+            src="./img/instructions-02.jpg"
+            alt="instructions-02"
+          />
+          <figcaption>Situace po čtyřech tazích</figcaption>
+        </figure>
+        <figure>
+          <img
+            class="instrImg"
+            src="./img/instructions-03.jpg"
+            alt="instructions-03"
+          />
+          <figcaption>Výherní pozice hráče s kolečky</figcaption>
+        </figure>
+        <figure>
+          <img
+            class="instrImg"
+            src="./img/instructions-04.jpg"
+            alt="instructions-04"
+          />
+          <figcaption>
+            V této situaci nikdo nevyhrává. Pokud je na tahu <br />hráč s
+            kolečky, může přidat další kolečko do <br />šikmé řady, kde už má 4
+            kolečka, a vyhraje.
+          </figcaption>
+        </figure>
+        <figure>
+          <img
+            class="instrImg"
+            src="./img/instructions-05.jpg"
+            alt="instructions-05"
+          />
+          <figcaption>Výherní pozice hráče s křížky</figcaption>
+        </figure>
+        <figure>
+          <img
+            class="instrImg"
+            src="./img/instructions-06.jpg"
+            alt="instructions-06"
+          />
+          <figcaption>Ještě jedna výherní pozice hráče s kolečky</figcaption>
+        </figure>
+      </div>
+      <a
         href="index.html"
         class="rules"
         onmouseover="this.style.backgroundColor='#1cbb96'"
@@ -81,12 +112,12 @@
         >Úvodní stránka</a
       >
       <a
-        href="index.html"
+        href="hra.html"
         class="start"
         onmouseover="this.style.backgroundColor='#0090e9'"
         onmouseout="this.style.backgroundColor='#0197f6'"
         >Začít hrát</a
       >
-</div>
+    </div>
   </body>
 </html>

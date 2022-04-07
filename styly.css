@@ -71,17 +71,17 @@ a {
   flex-direction: column;
   margin: auto;
   color: #fff;
-border-top-right-radius: 10px;
-border-top-left-radius: 10px;
-  }
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
 .listOfRules {
-font-family: "Open Sans", sans-serif;
-text-align: left;
-font-size: 16px;
-margin: 5px 30px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+  font-size: 16px;
+  margin: 5px 30px;
 }
 li {
-line-height: 1.5;
+  line-height: 1.5;
 }
 
 .rules {
@@ -94,50 +94,50 @@ line-height: 1.5;
 }
 
 .svg {
-width: 1em;
-height: 1em;
-color: #fff;
-filter: invert(100%)
+  width: 1em;
+  height: 1em;
+  color: #fff;
+  filter: invert(100%);
 }
 
 .instruction {
-text-align: center;
+  text-align: center;
 }
 
 .figure {
-flex-direction: row;
-margin: auto;
-width: 100%;
+  flex-direction: row;
+  margin: auto;
+  width: 100%;
 }
 
 .instrImg {
-border-top-right-radius:0;
-border-top-left-radius: 0;
-width: 300x;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  width: 300x;
 }
 
 .figcaption {
-display: block;
-text-align: center;
-bottom: 20px;
+  display: block;
+  text-align: center;
+  bottom: 20px;
 }
 
-@media (min-width: 500px){
-     .celek{
-        width: 500px;
+@media (min-width: 500px) {
+  .celek {
+    width: 500px;
+  }
 }
 
+@media (min-width: 640px) {
+  .pravidla {
+    width: 800px;
+  }
 
-@media (min-width: 640px){
-     .pravidla{
-        width: 800px;
-}
-
-.instruction {
-display: flex;
-flex-wrap: wrap;
-}
-.figure {
-  flex: 0 0 50%;
-}
+  .instruction {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .figure {
+    flex: 0 0 50%;
+  }
 }
