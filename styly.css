@@ -120,6 +120,7 @@ li {
   display: block;
   text-align: center;
   bottom: 20px;
+  font-style: italic;
 }
 
 @media (min-width: 500px) {
