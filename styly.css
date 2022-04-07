@@ -18,8 +18,8 @@ html {
   text-align: center;
 }
 
-.celek, /*musím zadávat taky protože je to rodič*/
-imgUvodni {
+.celek, /*musím zadávat taky protože je to rodič, zakulacení rohů*/
+img {
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
@@ -71,14 +71,17 @@ a {
   flex-direction: column;
   margin: auto;
   color: #fff;
-}
-.seznam {
-  text-align: left;
-  font-size: 16px;
-  margin: 5px 30px;
+border-top-right-radius: 10px;
+border-top-left-radius: 10px;
+  }
+.listOfRules {
+font-family: "Open Sans", sans-serif;
+text-align: left;
+font-size: 16px;
+margin: 5px 30px;
 }
 li {
-  line-height: 1.5;
+line-height: 1.5;
 }
 
 .rules {
@@ -91,37 +94,50 @@ li {
 }
 
 .svg {
-  width: 1em;
-  height: 1em;
-  color: #fff;
-  filter: invert(100%);
+width: 1em;
+height: 1em;
+color: #fff;
+filter: invert(100%)
 }
+
 .instruction {
-  text-align: center;
+text-align: center;
+}
+
+.figure {
+flex-direction: row;
+margin: auto;
+width: 100%;
+}
+
+.instrImg {
+border-top-right-radius:0;
+border-top-left-radius: 0;
+width: 300x;
+}
+
+.figcaption {
+display: block;
+text-align: center;
+bottom: 20px;
+}
+
+@media (min-width: 500px){
+     .celek{
+        width: 500px;
+}
+
+
+@media (min-width: 640px){
+     .pravidla{
+        width: 800px;
+}
+
+.instruction {
+display: flex;
+flex-wrap: wrap;
 }
 .figure {
-  flex-direction: row;
-  margin: auto;
-  width: 100%;
-  border-top-right-radius: 0;
-  border-top-left-radius: 0;
+  flex: 0 0 50%;
 }
-.figcaption {
-  display: block;
-  text-align: center;
-  bottom: 20px;
-}
-
-@media (min-width: 640px) {
-  .pravidla {
-    width: 800px;
-  }
-
-  .instruction {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .figure {
-    flex: 0 0 50%;
-  }
 }
