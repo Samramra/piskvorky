@@ -6,37 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"/>
     <link rel="stylesheet" href="styly.css" />
-    <script src="hra.js"></script>
     <title>Piškvorky-Hra</title>
   </head>
   <body>
-    <div class="game">
-      <h1>Piškvorky</h1>
-    </div>
-    <div class="playField">
-      <a href="index.html" class="playing"
-        ><img src="./img/prave-hraje.png"
-      /></a>
-      <a
-        href="index.html"
-        class="home"
-        onmouseover="this.style.backgroundColor='#1cbb96'"
-        onmouseout="this.style.backgroundColor='#1fcca4'"
-        ><img src="./img/home.svg"
-      /></a>
-      <a
-        href="hra.html"
-        class="restart"
-        onmouseover="this.style.backgroundColor='#0090e9'"
-        onmouseout="this.style.backgroundColor='#0197f6'"
-        ><img src="./img/restart.svg"
-      /></a>
-    </div>
+  <div class="game">
+      <h1 class="gameH">Piškvorky</h1>
+<div class="playField">
+    <span class="playing">
+<p>HRAJE: <img src="./img/circle.svg" class="circle" alt="bílý kroužek" />
+</p>
+  </span>
+<span class="btnGame">
+      <a href="index.html"><img class="home" src="./img/home.svg" alt="home"/></a>
+      <a href="hra.html"><img class="restart" src="./img/restart.svg" alt="restart hry"/></a>
+ </span>
+</div>
     <div class="field">
       <button class="btn"></button>
       <button class="btn"></button>
@@ -138,6 +125,7 @@
       <button class="btn"></button>
       <button class="btn"></button>
       <button class="btn"></button>
-    </div>
+  </div>
+
   </body>
 </html>
