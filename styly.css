@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 html {
-  height: auto;
+  min-height: 100vh;
   margin-top: 20px;
   background-color: #fff;
   background: linear-gradient(#615dad, #ffc8da);
@@ -10,12 +10,13 @@ html {
 }
 .celek,
 .pravidla {
-  width: 500px;
+  max-width: 23rem;
   margin: auto;
   display: flex;
   flex-direction: column;
   color: #fff;
   text-align: center;
+  margin-top: 3rem;
 }
 
 .celek, /*musím zadávat taky protože je to rodič, zakulacení rohů*/
@@ -35,6 +36,7 @@ h1 {
   line-height: 1;
   font-family: lobster, sans-serif;
   font-size: 36px;
+  font-weight: 100; /*tloušťka písma*/
   text-align: center;
 }
 
@@ -67,21 +69,20 @@ a {
 
 .pravidla {
   background-color: #283e50;
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  color: #fff;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
+  text-align: left;
+  max-width: 55rem;
+  width: 100%;
 }
 .listOfRules {
   font-family: 'Open Sans', sans-serif;
   text-align: left;
   font-size: 16px;
-  margin: 5px 30px;
+  margin: 5px;
 }
 li {
-  line-height: 1.5;
+  line-height: 1.7;
 }
 
 .rules {
@@ -101,6 +102,8 @@ li {
 }
 
 .instruction {
+  font-style: italic;
+  font-size: 16px;
   text-align: center;
 }
 
@@ -109,12 +112,10 @@ li {
   margin: auto;
   width: 100%;
 }
-
 .instrImg {
-  font-style: italic;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
-  width: 300x;
+  width: 100%;
 }
 
 .figcaption {
@@ -125,7 +126,7 @@ li {
 
 @media (min-width: 500px) {
   .celek {
-    width: 500px;
+    width: auto;
   }
 }
 
