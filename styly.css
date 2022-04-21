@@ -139,6 +139,7 @@ li {
     display: flex;
     flex-wrap: wrap;
   }
+
   .figure {
     flex: 0 0 50%;
   }
@@ -218,4 +219,16 @@ button {
 
 .btn:hover {
   opacity: 0.7;
+}
+
+.field--circle {
+  background-image: url('img/circle.svg');
+  background-position: center;
+  background-repeat: no-repeat; /*aby se pozadí neopakovalo*/
+}
+
+.fieled--cross {
+  background-image: url('img/cross.svg');
+  background-position: center;
+  background-repeat: no-repeat; /*aby se pozadí neopakovalo*/
 }
