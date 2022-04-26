@@ -9,14 +9,15 @@ html {
   background-attachment: fixed;
 }
 .celek,
-.pravidla {
+.pravidla,
+.game {
   max-width: 23rem;
   margin: auto;
   display: flex;
   flex-direction: column;
   color: #fff;
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 .celek, /*musím zadávat taky protože je to rodič, zakulacení rohů*/
@@ -145,8 +146,8 @@ li {
 .playing {
   font-family: sans-serif;
   font-size: 28px;
-  font-style: bold;
-  margin-top: -50px;
+  margin-top: -3rem;
+  margin-left: -10.5rem;
   float: left;
   padding: 8px;
 }
@@ -160,7 +161,7 @@ li {
 .btnGame {
   margin-top: -20px;
   float: right;
-  margin-right: 8px;
+  margin-right: -9.5rem;
 }
 
 .home {
@@ -186,7 +187,7 @@ li {
   display: flex;
   flex-wrap: wrap;
   width: calc(46rem - 50px);
-  margin: auto;
+  margin-left: -10rem;
   border: 3px solid black;
 }
 button {
@@ -236,5 +237,4 @@ button {
   .figure {
     flex: 0 0 50%;
   }
-
 }
