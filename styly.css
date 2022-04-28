@@ -9,8 +9,7 @@ html {
   background-attachment: fixed;
 }
 .celek,
-.pravidla,
-.game {
+.pravidla {
   max-width: 23rem;
   margin: auto;
   display: flex;
@@ -126,7 +125,7 @@ li {
 }
 
 .game {
-  width: 700px;
+  max-width: 23rem;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -235,6 +234,20 @@ button {
   }
 
   .figure {
+    flex: 0 0 50%;
+  }
+}
+
+@media (min-width: 700px) {
+  .game {
+    width: auto;
+  }
+
+  .playfield {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .field {
     flex: 0 0 50%;
   }
 }
