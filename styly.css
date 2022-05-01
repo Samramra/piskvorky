@@ -16,7 +16,7 @@ html {
   flex-direction: column;
   color: #fff;
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 3rem;
 }
 
 .celek, /*musím zadávat taky protože je to rodič, zakulacení rohů*/
@@ -124,8 +124,29 @@ li {
   bottom: 20px;
 }
 
+@media (min-width: 500px) {
+  .celek {
+    width: auto;
+  }
+}
+
+@media (min-width: 640px) {
+  .pravidla {
+    width: 800px;
+  }
+
+  .instruction {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .figure {
+    flex: 0 0 50%;
+  }
+}
 .game {
-  max-width: 23rem;
+  width: 700px;
+  max-width: 80vmin;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -139,14 +160,16 @@ li {
 
 .playfield {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 1px;
-  width: calc(46rem - 50px);
+  width: 100%;
+  height: 40rem;
 }
 .playing {
   font-family: sans-serif;
   font-size: 28px;
-  margin-top: -3rem;
-  margin-left: -10.5rem;
+  font-style: bold;
+  margin-top: -50px;
   float: left;
   padding: 8px;
 }
@@ -158,9 +181,9 @@ li {
   filter: invert(100%);
 }
 .btnGame {
+  display: flex;
+  margin-left: 35rem;
   margin-top: -20px;
-  float: right;
-  margin-right: -9.5rem;
 }
 
 .home {
@@ -186,7 +209,7 @@ li {
   display: flex;
   flex-wrap: wrap;
   width: calc(46rem - 50px);
-  margin-left: -10rem;
+  margin: auto;
   border: 3px solid black;
 }
 button {
@@ -194,60 +217,25 @@ button {
   padding: 2rem 2rem;
   color: white;
   cursor: pointer;
-  background-color: #c69fc7;
   opacity: 0.5;
 }
+
 .btn:hover {
   opacity: 0.7;
 }
 
-.field--circle,
-.field--cross {
+.field--circle {
+  background-image: url('img/circle.svg');
   background-position: center;
   background-repeat: no-repeat; /*aby se pozadí neopakovalo*/
   background-size: 60%;
-  transition: background-size 0.15s;
   opacity: 0.8;
-}
-.field--circle {
-  background-image: url('img/circle.svg');
 }
 
 .field--cross {
   background-image: url('img/cross.svg');
-}
-
-@media (min-width: 500px) {
-  .celek {
-    width: auto;
-  }
-}
-
-@media (min-width: 640px) {
-  .pravidla {
-    width: 800px;
-  }
-
-  .instruction {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .figure {
-    flex: 0 0 50%;
-  }
-}
-
-@media (min-width: 700px) {
-  .game {
-    width: auto;
-  }
-
-  .playfield {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .field {
-    flex: 0 0 50%;
-  }
+  background-position: center;
+  background-repeat: no-repeat; /*aby se pozadí neopakovalo*/
+  background-size: 60%;
+  opacity: 0.8;
 }

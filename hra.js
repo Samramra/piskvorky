@@ -12,8 +12,8 @@ for (let i = 0; i < buttons.length; i += 1) {
       event.target.classList.add('field--cross');
       const ikonaHrace = document.querySelector('.circle');
       ikonaHrace.src = 'img/circle.svg';
-      ikona = 'circle';
+     ikona = 'circle';
     }
-    buttons[i].disabled = true;
-  });
-}
+buttons[i].disabled = true;
+    });
+   }
