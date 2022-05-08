@@ -124,29 +124,8 @@ li {
   bottom: 20px;
 }
 
-@media (min-width: 500px) {
-  .celek {
-    width: auto;
-  }
-}
-
-@media (min-width: 640px) {
-  .pravidla {
-    width: 800px;
-  }
-
-  .instruction {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .figure {
-    flex: 0 0 50%;
-  }
-}
 .game {
   width: 700px;
-  max-width: 80vmin;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -156,13 +135,14 @@ li {
 .gameH {
   font-size: 80px;
   letter-spacing: 0.1em;
+  background-size: 10%;
 }
 
 .playfield {
   display: flex;
   flex-wrap: wrap;
   margin-top: 1px;
-  width: 100%;
+  width: 60%;
   height: 40rem;
 }
 .playing {
@@ -184,6 +164,7 @@ li {
   display: flex;
   margin-left: 35rem;
   margin-top: -20px;
+  background-size: 10%;
 }
 
 .home {
@@ -207,10 +188,11 @@ li {
 }
 .field {
   display: flex;
-  flex-wrap: wrap;
   width: calc(46rem - 50px);
+  flex-wrap: wrap;
   margin: auto;
   border: 3px solid black;
+  background-size: 10%;
 }
 button {
   border: 2px solid black;
@@ -238,4 +220,33 @@ button {
   background-repeat: no-repeat; /*aby se pozadí neopakovalo*/
   background-size: 60%;
   opacity: 0.8;
+}
+
+@media (min-width: 500px) {
+  .celek {
+    width: auto;
+  }
+}
+
+@media (min-width: 640px) {
+  .pravidla {
+    width: 800px;
+  }
+
+  .instruction {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .figure {
+    flex: 0 0 50%;
+  }
+}
+@keyframes zoom {
+  0% {
+    background-size: 0;
+  }
+  100% {
+    background-size: 65%;
+  }
 }
