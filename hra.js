@@ -12,26 +12,27 @@ for (let i = 0; i < buttons.length; i += 1) {
       event.target.classList.add('field--cross');
       const ikonaHrace = document.querySelector('.circle');
       ikonaHrace.src = 'img/circle.svg';
-     ikona = 'circle';
+      ikona = 'circle';
     }
-buttons[i].disabled = true;
-if (isWinningMove(buttons[i]) === true) {
-  let ikona = getSymbol(buttons[i]);
 
-  if (ikona === 'cross') {
-      const vitezKrizek = () => {
-      alert('Vyhrál křížek');
-    };
-    setTimeout(vitezKrizek, 500);
-    return;
-  }
-  const vitezKrouzek = () => {
-    alert('Vyhrál kroužek');
-  };
-  setTimeout(vitezKrouzek, 500);
+    if (isWinningMove(buttons[i]) === true) {
+      let ikona = getSymbol(buttons[i]);
+
+      if (ikona === 'cross') {
+        const vitezKrizek = () => {
+          alert('Vyhrál křížek');
+        };
+        setTimeout(vitezKrizek, 400);
+        return;
+      }
+      const vitezKrouzek = () => {
+        alert('Vyhrál kroužek');
+      };
+      setTimeout(vitezKrouzek, 400);
+    }
+    buttons[i].disabled = true;
+  });
 }
-    });
-   }
 /*console.log(buttons[15])*/
 
 const getSymbol = (field) => {
@@ -68,6 +69,8 @@ const isWinningMove = (field) => {
   const symbol = getSymbol(field);
 
   let i;
+  let y;
+  let x;
 
   let inRow = 1; // Jednička pro právě vybrané políčko
   // Koukni doleva
@@ -112,6 +115,56 @@ const isWinningMove = (field) => {
   if (inColumn >= symbolsToWin) {
     return true;
   }
+  let inDiagonal = 1;
+  //Koukni doprava nahoru
+  y = origin.column;
+  x = origin.row;
+  while (
+    x > 0 &&
+    symbol === getSymbol(getField(x - 1, y + 1)) &&
+    y < boardSize - 1
+  ) {
+    inDiagonal++;
+    y++;
+    x--;
+  }
 
+  //Koukni doleva nahoru
+  y = origin.column;
+  x = origin.row;
+  while (x > 0 && symbol === getSymbol(getField(x - 1, y - 1)) && y > 0) {
+    inDiagonal++;
+    y--;
+    x--;
+  }
+  //Koukni doprava dolu
+  y = origin.column;
+  x = origin.row;
+  while (
+    x < boardSize - 1 &&
+    symbol === getSymbol(getField(x + 1, y + 1)) &&
+    y < boardSize - 1
+  ) {
+    inDiagonal++;
+    y++;
+    x++;
+  }
+
+  //Koukni doleva dolu
+  y = origin.column;
+  x = origin.row;
+  while (
+    x < boardSize - 1 &&
+    symbol === getSymbol(getField(x + 1, y - 1)) &&
+    y > 0
+  ) {
+    inDiagonal++;
+    y--;
+    x++;
+  }
+
+  if (inDiagonal >= symbolsToWin) {
+    return true;
+  }
   return false;
 };
